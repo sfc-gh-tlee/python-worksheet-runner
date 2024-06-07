@@ -1,0 +1,3336 @@
+{
+    "estimation_history": {
+      "17": {
+        "SingleStatEstimator(avgByBytes)": [
+          {
+            "currentRuntime": 2182798,
+            "error": -0.12820114989733059,
+            "estimatedTotalRuntime": 10614151
+          },
+          {
+            "currentRuntime": 12182856,
+            "error": -0.027261848049281313,
+            "estimatedTotalRuntime": 11843087
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.0016522381930184804,
+            "estimatedTotalRuntime": 12195116
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.0016522381930184804,
+            "estimatedTotalRuntime": 12195116
+          }
+        ],
+        "SingleStatEstimator(avgByFiles)": [
+          {
+            "currentRuntime": 2182798,
+            "error": -0.12848878850102669,
+            "estimatedTotalRuntime": 10610649
+          },
+          {
+            "currentRuntime": 12182856,
+            "error": -0.027119425051334703,
+            "estimatedTotalRuntime": 11844821
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.001708665297741273,
+            "estimatedTotalRuntime": 12195803
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.001708665297741273,
+            "estimatedTotalRuntime": 12195803
+          }
+        ],
+        "SingleStatEstimator(maxByBytes)": [
+          {
+            "currentRuntime": 2182798,
+            "error": -0.0972117453798768,
+            "estimatedTotalRuntime": 10991447
+          },
+          {
+            "currentRuntime": 12182856,
+            "error": 0.038120492813141685,
+            "estimatedTotalRuntime": 12639117
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.0882300616016427,
+            "estimatedTotalRuntime": 13249201
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.0882300616016427,
+            "estimatedTotalRuntime": 13249201
+          }
+        ],
+        "SingleStatEstimator(maxByFiles)": [
+          {
+            "currentRuntime": 2182798,
+            "error": -0.09755663244353183,
+            "estimatedTotalRuntime": 10987248
+          },
+          {
+            "currentRuntime": 12182856,
+            "error": 0.03853092402464066,
+            "estimatedTotalRuntime": 12644114
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.08824542094455852,
+            "estimatedTotalRuntime": 13249388
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": 0.08824542094455852,
+            "estimatedTotalRuntime": 13249388
+          }
+        ],
+        "SingleStatEstimator(minByBytes)": [
+          {
+            "currentRuntime": 2182798,
+            "error": -0.15919063655030802,
+            "estimatedTotalRuntime": 10236854
+          },
+          {
+            "currentRuntime": 12182856,
+            "error": -0.15628780287474334,
+            "estimatedTotalRuntime": 10272196
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": -0.12290800821355236,
+            "estimatedTotalRuntime": 10678595
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": -0.12290800821355236,
+            "estimatedTotalRuntime": 10678595
+          }
+        ],
+        "SingleStatEstimator(minByFiles)": [
+          {
+            "currentRuntime": 2182798,
+            "error": -0.15942094455852157,
+            "estimatedTotalRuntime": 10234050
+          },
+          {
+            "currentRuntime": 12182856,
+            "error": -0.15613018480492813,
+            "estimatedTotalRuntime": 10274115
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": -0.12286718685831623,
+            "estimatedTotalRuntime": 10679092
+          },
+          {
+            "currentRuntime": 12184408,
+            "error": -0.12286718685831623,
+            "estimatedTotalRuntime": 10679092
+          }
+        ]
+      },
+      "30": {
+        "SingleStatEstimator(avgByBytes)": [
+          {
+            "currentRuntime": 9553443,
+            "error": -0.0526754896545864,
+            "estimatedTotalRuntime": 22297177
+          },
+          {
+            "currentRuntime": 19553813,
+            "error": -0.022552704252878447,
+            "estimatedTotalRuntime": 23006177
+          }
+        ],
+        "SingleStatEstimator(avgByFiles)": [
+          {
+            "currentRuntime": 9553443,
+            "error": -0.05293881973063687,
+            "estimatedTotalRuntime": 22290979
+          },
+          {
+            "currentRuntime": 19553813,
+            "error": -0.022536559459574286,
+            "estimatedTotalRuntime": 23006557
+          }
+        ],
+        "SingleStatEstimator(maxByBytes)": [
+          {
+            "currentRuntime": 9553443,
+            "error": 0.034392870799167266,
+            "estimatedTotalRuntime": 24346505
+          },
+          {
+            "currentRuntime": 19553813,
+            "error": 0.05082376683519565,
+            "estimatedTotalRuntime": 24733239
+          }
+        ],
+        "SingleStatEstimator(maxByFiles)": [
+          {
+            "currentRuntime": 9553443,
+            "error": 0.03442137910523856,
+            "estimatedTotalRuntime": 24347176
+          },
+          {
+            "currentRuntime": 19553813,
+            "error": 0.05077091388027361,
+            "estimatedTotalRuntime": 24731995
+          }
+        ],
+        "SingleStatEstimator(minByBytes)": [
+          {
+            "currentRuntime": 9553443,
+            "error": -0.16779496112503717,
+            "estimatedTotalRuntime": 19587610
+          },
+          {
+            "currentRuntime": 19553813,
+            "error": -0.12166656753197094,
+            "estimatedTotalRuntime": 20673334
+          }
+        ],
+        "SingleStatEstimator(minByFiles)": [
+          {
+            "currentRuntime": 9553443,
+            "error": -0.1692926031354888,
+            "estimatedTotalRuntime": 19552360
+          },
+          {
+            "currentRuntime": 19553813,
+            "error": -0.1210006797807707,
+            "estimatedTotalRuntime": 20689007
+          }
+        ]
+      },
+      "4": {
+        "SingleStatEstimator(avgByBytes)": [
+          {
+            "currentRuntime": 9767013,
+            "error": -0.04869851619308272,
+            "estimatedTotalRuntime": 35454055
+          },
+          {
+            "currentRuntime": 19766084,
+            "error": -0.01704346776141029,
+            "estimatedTotalRuntime": 36633807
+          },
+          {
+            "currentRuntime": 29766939,
+            "error": -0.012042421315302263,
+            "estimatedTotalRuntime": 36820191
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008761571279079127,
+            "estimatedTotalRuntime": 36942465
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008761571279079127,
+            "estimatedTotalRuntime": 36942465
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008761571279079127,
+            "estimatedTotalRuntime": 36942465
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008761571279079127,
+            "estimatedTotalRuntime": 36942465
+          }
+        ],
+        "SingleStatEstimator(avgByFiles)": [
+          {
+            "currentRuntime": 9767013,
+            "error": -0.04736813437441305,
+            "estimatedTotalRuntime": 35503637
+          },
+          {
+            "currentRuntime": 19766084,
+            "error": -0.016270117255628002,
+            "estimatedTotalRuntime": 36662629
+          },
+          {
+            "currentRuntime": 29766939,
+            "error": -0.011720867208672086,
+            "estimatedTotalRuntime": 36832175
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008520217875446082,
+            "estimatedTotalRuntime": 36951460
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008520217875446082,
+            "estimatedTotalRuntime": 36951460
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008520217875446082,
+            "estimatedTotalRuntime": 36951460
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.008520217875446082,
+            "estimatedTotalRuntime": 36951460
+          }
+        ],
+        "SingleStatEstimator(maxByBytes)": [
+          {
+            "currentRuntime": 9767013,
+            "error": 0.03706871662776034,
+            "estimatedTotalRuntime": 38650514
+          },
+          {
+            "currentRuntime": 19766084,
+            "error": 0.08150707021921705,
+            "estimatedTotalRuntime": 40306687
+          },
+          {
+            "currentRuntime": 29766939,
+            "error": 0.0869409160428238,
+            "estimatedTotalRuntime": 40509201
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.08540577960235048,
+            "estimatedTotalRuntime": 40451988
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.08540577960235048,
+            "estimatedTotalRuntime": 40451988
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.08540577960235048,
+            "estimatedTotalRuntime": 40451988
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.08540577960235048,
+            "estimatedTotalRuntime": 40451988
+          }
+        ],
+        "SingleStatEstimator(maxByFiles)": [
+          {
+            "currentRuntime": 9767013,
+            "error": 0.03744592020177628,
+            "estimatedTotalRuntime": 38664572
+          },
+          {
+            "currentRuntime": 19766084,
+            "error": 0.08281469854302503,
+            "estimatedTotalRuntime": 40355421
+          },
+          {
+            "currentRuntime": 29766939,
+            "error": 0.08708248141887359,
+            "estimatedTotalRuntime": 40514477
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.085390297566342,
+            "estimatedTotalRuntime": 40451411
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.085390297566342,
+            "estimatedTotalRuntime": 40451411
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.085390297566342,
+            "estimatedTotalRuntime": 40451411
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": 0.085390297566342,
+            "estimatedTotalRuntime": 40451411
+          }
+        ],
+        "SingleStatEstimator(minByBytes)": [
+          {
+            "currentRuntime": 9767013,
+            "error": -0.11790265368000215,
+            "estimatedTotalRuntime": 32874886
+          },
+          {
+            "currentRuntime": 19766084,
+            "error": -0.09711908020070299,
+            "estimatedTotalRuntime": 33649469
+          },
+          {
+            "currentRuntime": 29766939,
+            "error": -0.09646161689339666,
+            "estimatedTotalRuntime": 33673972
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.09105597145080362,
+            "estimatedTotalRuntime": 33875435
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.09105597145080362,
+            "estimatedTotalRuntime": 33875435
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.09105597145080362,
+            "estimatedTotalRuntime": 33875435
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.09105597145080362,
+            "estimatedTotalRuntime": 33875435
+          }
+        ],
+        "SingleStatEstimator(minByFiles)": [
+          {
+            "currentRuntime": 9767013,
+            "error": -0.11484249644476643,
+            "estimatedTotalRuntime": 32988935
+          },
+          {
+            "currentRuntime": 19766084,
+            "error": -0.09655775577557756,
+            "estimatedTotalRuntime": 33670389
+          },
+          {
+            "currentRuntime": 29766939,
+            "error": -0.09617534680297297,
+            "estimatedTotalRuntime": 33684641
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.0908791488904988,
+            "estimatedTotalRuntime": 33882025
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.0908791488904988,
+            "estimatedTotalRuntime": 33882025
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.0908791488904988,
+            "estimatedTotalRuntime": 33882025
+          },
+          {
+            "currentRuntime": 34770786,
+            "error": -0.0908791488904988,
+            "estimatedTotalRuntime": 33882025
+          }
+        ]
+      }
+    },
+    "isLastPersist": true,
+    "stats": {
+      "1": {
+        "currentTime": 1714181732631462,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662738476,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662754625,
+            "id": 0,
+            "id2": 0,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 73049,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 0,
+              "scanAssignedFiles": 0,
+              "scanBytes": 2138624,
+              "scanFiles": 1,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 73049,
+              "scannedFileTotalBytes": 2138624,
+              "unprunableFileTotalBytes": 0,
+              "unprunableFiles": 0,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181662754653,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662746753,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662807827,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9095,
+              "outputRows": 9095
+            },
+            "terminatedTimestampUsec": 1714181662816001,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662765841,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662839706,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50231,
+              "outputRows": 50231
+            },
+            "terminatedTimestampUsec": 1714181662866494,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867065,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700191072,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 80817439,
+              "prunedFileTotalBytes": 5639753216,
+              "prunedFiles": 331,
+              "prunedFiles2": 331,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 170128892928,
+              "scanAssignedFiles": 9884,
+              "scanBytes": 151237128192,
+              "scanFiles": 8784,
+              "scanFilteredRows": 3349515936,
+              "scanScannedRows": 3430333375,
+              "scannedFileTotalBytes": 151237128192,
+              "unprunableFileTotalBytes": 164489139712,
+              "unprunableFiles": 9553,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400143,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821094,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700403874,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 80817439,
+              "outputRows": 80817439
+            },
+            "terminatedTimestampUsec": 1714181700404923,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662803137,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405491,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 80817439,
+              "outputRows": 80817439
+            },
+            "terminatedTimestampUsec": 1714181700405598,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662748563,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700414348,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 8936,
+              "outputRows": 8936
+            },
+            "terminatedTimestampUsec": 1714181700420796,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662762142,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700433395,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 49778,
+              "outputRows": 49778
+            },
+            "terminatedTimestampUsec": 1714181700450057,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450508,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712599363,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 109358,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 60955473920,
+              "scanAssignedFiles": 3641,
+              "scanBytes": 56051031104,
+              "scanFiles": 3348,
+              "scanFilteredRows": 874797700,
+              "scanScannedRows": 874907058,
+              "scannedFileTotalBytes": 56049212928,
+              "unprunableFileTotalBytes": 60955473920,
+              "unprunableFiles": 3641,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026067,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422754,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713027012,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 109358,
+              "outputRows": 109358
+            },
+            "terminatedTimestampUsec": 1714181713027695,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700408538,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028330,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 109358,
+              "outputRows": 109358
+            },
+            "terminatedTimestampUsec": 1714181713028438,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662763449,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713034338,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9022,
+              "outputRows": 9022
+            },
+            "terminatedTimestampUsec": 1714181713042327,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662753750,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713062714,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50325,
+              "outputRows": 50325
+            },
+            "terminatedTimestampUsec": 1714181713078739,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079225,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3809402,
+              "prunedFileTotalBytes": 447105536,
+              "prunedFiles": 26,
+              "prunedFiles2": 26,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 123798272000,
+              "scanAssignedFiles": 7360,
+              "scanBytes": 97512145408,
+              "scanFiles": 5798,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 97512145408,
+              "unprunableFileTotalBytes": 98296059392,
+              "unprunableFiles": 5845,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713044855,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3809402,
+              "outputRows": 3809402
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030342,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3809402,
+              "outputRows": 3809402
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662632551,
+        "version": 1
+      },
+      "2": {
+        "currentTime": 1714181732632252,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662754015,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662809347,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9178,
+              "outputRows": 9178
+            },
+            "terminatedTimestampUsec": 1714181662816163,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662744627,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662797009,
+            "id": 2,
+            "id2": 2,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 402000,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 0,
+              "scanAssignedFiles": 0,
+              "scanBytes": 23814656,
+              "scanFiles": 2,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 402000,
+              "scannedFileTotalBytes": 23814656,
+              "unprunableFileTotalBytes": 0,
+              "unprunableFiles": 0,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181662797070,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662762757,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662833711,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 49974,
+              "outputRows": 49974
+            },
+            "terminatedTimestampUsec": 1714181662866473,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867027,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700046970,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 80620762,
+              "prunedFileTotalBytes": 4907251200,
+              "prunedFiles": 288,
+              "prunedFiles2": 288,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 149792330240,
+              "scanAssignedFiles": 8701,
+              "scanBytes": 150903510528,
+              "scanFiles": 8762,
+              "scanFilteredRows": 3341630037,
+              "scanScannedRows": 3422250799,
+              "scannedFileTotalBytes": 150903510528,
+              "unprunableFileTotalBytes": 144885079040,
+              "unprunableFiles": 8413,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400049,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821062,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700401149,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 80620762,
+              "outputRows": 80620762
+            },
+            "terminatedTimestampUsec": 1714181700404802,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662802926,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405455,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 80620762,
+              "outputRows": 80620762
+            },
+            "terminatedTimestampUsec": 1714181700405577,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662749147,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700413843,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9234,
+              "outputRows": 9234
+            },
+            "terminatedTimestampUsec": 1714181700420740,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662772582,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700443028,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50700,
+              "outputRows": 50700
+            },
+            "terminatedTimestampUsec": 1714181700449954,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450478,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712731726,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 109900,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 53899405312,
+              "scanAssignedFiles": 3221,
+              "scanBytes": 56370662904,
+              "scanFiles": 3368,
+              "scanFilteredRows": 879723900,
+              "scanScannedRows": 879833800,
+              "scannedFileTotalBytes": 56370398208,
+              "unprunableFileTotalBytes": 53899405312,
+              "unprunableFiles": 3221,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713025979,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422716,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713026956,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 109900,
+              "outputRows": 109900
+            },
+            "terminatedTimestampUsec": 1714181713027579,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700408657,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028258,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 109900,
+              "outputRows": 109900
+            },
+            "terminatedTimestampUsec": 1714181713028384,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662773653,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713035302,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9273,
+              "outputRows": 9273
+            },
+            "terminatedTimestampUsec": 1714181713042353,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662756589,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713065377,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50673,
+              "outputRows": 50673
+            },
+            "terminatedTimestampUsec": 1714181713078749,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079199,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3833902,
+              "prunedFileTotalBytes": 343892480,
+              "prunedFiles": 20,
+              "prunedFiles2": 20,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 111306145792,
+              "scanAssignedFiles": 6618,
+              "scanBytes": 98085943856,
+              "scanFiles": 5833,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 98081970176,
+              "unprunableFileTotalBytes": 98743532544,
+              "unprunableFiles": 5872,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713044862,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3833756,
+              "outputRows": 3833756
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030370,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3833756,
+              "outputRows": 3833756
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662632643,
+        "version": 1
+      },
+      "3": {
+        "currentTime": 1714181732633403,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662752562,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662812353,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9118,
+              "outputRows": 9118
+            },
+            "terminatedTimestampUsec": 1714181662816363,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662767552,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662851118,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50146,
+              "outputRows": 50146
+            },
+            "terminatedTimestampUsec": 1714181662866526,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867018,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700102587,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 81247228,
+              "prunedFileTotalBytes": 4505635840,
+              "prunedFiles": 262,
+              "prunedFiles2": 262,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 159372066816,
+              "scanAssignedFiles": 9254,
+              "scanBytes": 152054830592,
+              "scanFiles": 8828,
+              "scanFilteredRows": 3367417282,
+              "scanScannedRows": 3448664510,
+              "scannedFileTotalBytes": 152054830592,
+              "unprunableFileTotalBytes": 154866430976,
+              "unprunableFiles": 8992,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700399996,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821009,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700401137,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 81247228,
+              "outputRows": 81247228
+            },
+            "terminatedTimestampUsec": 1714181700404936,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662802993,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405631,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 81247228,
+              "outputRows": 81247228
+            },
+            "terminatedTimestampUsec": 1714181700405771,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662739559,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662752047,
+            "id": 13,
+            "id2": 13,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 73049,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 0,
+              "scanAssignedFiles": 0,
+              "scanBytes": 2138624,
+              "scanFiles": 1,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 73049,
+              "scannedFileTotalBytes": 2138624,
+              "unprunableFileTotalBytes": 0,
+              "unprunableFiles": 0,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181662752118,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662749166,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700412937,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9124,
+              "outputRows": 9124
+            },
+            "terminatedTimestampUsec": 1714181700420734,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662762408,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700439566,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50674,
+              "outputRows": 50674
+            },
+            "terminatedTimestampUsec": 1714181700449946,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450469,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713025526,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 113059,
+              "prunedFileTotalBytes": 17082368,
+              "prunedFiles": 1,
+              "prunedFiles2": 1,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 60564010496,
+              "scanAssignedFiles": 3617,
+              "scanBytes": 57980941744,
+              "scanFiles": 3463,
+              "scanFilteredRows": 904902076,
+              "scanScannedRows": 905015135,
+              "scannedFileTotalBytes": 57978353152,
+              "unprunableFileTotalBytes": 60546928128,
+              "unprunableFiles": 3616,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026323,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422726,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713026957,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 113059,
+              "outputRows": 113059
+            },
+            "terminatedTimestampUsec": 1714181713027510,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700407615,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028271,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 113059,
+              "outputRows": 113059
+            },
+            "terminatedTimestampUsec": 1714181713028420,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662765961,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713035181,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9089,
+              "outputRows": 9089
+            },
+            "terminatedTimestampUsec": 1714181713042367,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662753853,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713055109,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50204,
+              "outputRows": 50204
+            },
+            "terminatedTimestampUsec": 1714181713078722,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079188,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3811961,
+              "prunedFileTotalBytes": 470822912,
+              "prunedFiles": 28,
+              "prunedFiles2": 28,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 118256829952,
+              "scanAssignedFiles": 7032,
+              "scanBytes": 97489606400,
+              "scanFiles": 5794,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 97484901888,
+              "unprunableFileTotalBytes": 98044257792,
+              "unprunableFiles": 5827,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713044878,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3811793,
+              "outputRows": 3811793
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030261,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3811793,
+              "outputRows": 3811793
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662632715,
+        "version": 1
+      },
+      "4": {
+        "currentTime": 1714181732636186,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662754885,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662809980,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9128,
+              "outputRows": 9128
+            },
+            "terminatedTimestampUsec": 1714181662816481,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662770335,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662843697,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50400,
+              "outputRows": 50400
+            },
+            "terminatedTimestampUsec": 1714181662866522,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867086,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700037819,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 80558056,
+              "prunedFileTotalBytes": 4122005504,
+              "prunedFiles": 239,
+              "prunedFiles2": 239,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 143007901184,
+              "scanAssignedFiles": 8301,
+              "scanBytes": 150807243264,
+              "scanFiles": 8755,
+              "scanFilteredRows": 3339531162,
+              "scanScannedRows": 3420089218,
+              "scannedFileTotalBytes": 150807243264,
+              "unprunableFileTotalBytes": 138885895680,
+              "unprunableFiles": 8062,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400222,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821272,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700401201,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 80558056,
+              "outputRows": 80558056
+            },
+            "terminatedTimestampUsec": 1714181700404904,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662803472,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405537,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 80558056,
+              "outputRows": 80558056
+            },
+            "terminatedTimestampUsec": 1714181700405672,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662750229,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700413932,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9206,
+              "outputRows": 9206
+            },
+            "terminatedTimestampUsec": 1714181700420819,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662748819,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662799845,
+            "id": 15,
+            "id2": 15,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 402000,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 0,
+              "scanAssignedFiles": 0,
+              "scanBytes": 23814656,
+              "scanFiles": 2,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 402000,
+              "scannedFileTotalBytes": 23814656,
+              "unprunableFileTotalBytes": 0,
+              "unprunableFiles": 0,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181662799920,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662763923,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700445791,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50170,
+              "outputRows": 50170
+            },
+            "terminatedTimestampUsec": 1714181700450226,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450515,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712688415,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 115675,
+              "prunedFileTotalBytes": 34145792,
+              "prunedFiles": 2,
+              "prunedFiles2": 2,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 51680646656,
+              "scanAssignedFiles": 3088,
+              "scanBytes": 58979500200,
+              "scanFiles": 3524,
+              "scanFilteredRows": 920635997,
+              "scanScannedRows": 920751672,
+              "scannedFileTotalBytes": 58979240960,
+              "unprunableFileTotalBytes": 51646500864,
+              "unprunableFiles": 3086,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026009,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422829,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713027133,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 115675,
+              "outputRows": 115675
+            },
+            "terminatedTimestampUsec": 1714181713027824,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700408644,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028564,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 115675,
+              "outputRows": 115675
+            },
+            "terminatedTimestampUsec": 1714181713028715,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662768733,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713035722,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9108,
+              "outputRows": 9108
+            },
+            "terminatedTimestampUsec": 1714181713042448,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662756024,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713066253,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 49934,
+              "outputRows": 49934
+            },
+            "terminatedTimestampUsec": 1714181713078824,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079284,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3848382,
+              "prunedFileTotalBytes": 323346432,
+              "prunedFiles": 19,
+              "prunedFiles2": 19,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 105126219264,
+              "scanAssignedFiles": 6257,
+              "scanBytes": 98525637376,
+              "scanFiles": 5865,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 98514055168,
+              "unprunableFileTotalBytes": 99321790976,
+              "unprunableFiles": 5913,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713044864,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3847936,
+              "outputRows": 3847936
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030556,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3847936,
+              "outputRows": 3847936
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662633721,
+        "version": 1
+      },
+      "5": {
+        "currentTime": 1714181732633102,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662755225,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662807256,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9141,
+              "outputRows": 9141
+            },
+            "terminatedTimestampUsec": 1714181662815550,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662769112,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662840284,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50200,
+              "outputRows": 50200
+            },
+            "terminatedTimestampUsec": 1714181662866552,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867083,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700133549,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 80490454,
+              "prunedFileTotalBytes": 4918316032,
+              "prunedFiles": 290,
+              "prunedFiles2": 290,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 154699442688,
+              "scanAssignedFiles": 8990,
+              "scanBytes": 150660752896,
+              "scanFiles": 8751,
+              "scanFilteredRows": 3335809371,
+              "scanScannedRows": 3416299825,
+              "scannedFileTotalBytes": 150660752896,
+              "unprunableFileTotalBytes": 149781126656,
+              "unprunableFiles": 8700,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400135,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821168,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700402717,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 80490454,
+              "outputRows": 80490454
+            },
+            "terminatedTimestampUsec": 1714181700405025,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662803229,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405547,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 80490454,
+              "outputRows": 80490454
+            },
+            "terminatedTimestampUsec": 1714181700405666,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662750738,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700416059,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9101,
+              "outputRows": 9101
+            },
+            "terminatedTimestampUsec": 1714181700420773,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662768141,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700437618,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50084,
+              "outputRows": 50084
+            },
+            "terminatedTimestampUsec": 1714181700450034,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450549,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712772678,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 111694,
+              "prunedFileTotalBytes": 33611776,
+              "prunedFiles": 2,
+              "prunedFiles2": 2,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 56545921536,
+              "scanAssignedFiles": 3381,
+              "scanBytes": 57320153824,
+              "scanFiles": 3427,
+              "scanFilteredRows": 895000184,
+              "scanScannedRows": 895111878,
+              "scannedFileTotalBytes": 57319895040,
+              "unprunableFileTotalBytes": 56512309760,
+              "unprunableFiles": 3379,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026060,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422862,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713027128,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 111694,
+              "outputRows": 111694
+            },
+            "terminatedTimestampUsec": 1714181713027890,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700412007,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028478,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 111694,
+              "outputRows": 111694
+            },
+            "terminatedTimestampUsec": 1714181713028618,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662749606,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662771676,
+            "id": 26,
+            "id2": 26,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 73049,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 0,
+              "scanAssignedFiles": 0,
+              "scanBytes": 2138624,
+              "scanFiles": 1,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 73049,
+              "scannedFileTotalBytes": 2138624,
+              "unprunableFileTotalBytes": 0,
+              "unprunableFiles": 0,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181662771959,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662764768,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713042110,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9037,
+              "outputRows": 9037
+            },
+            "terminatedTimestampUsec": 1714181713042578,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662756207,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713055725,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50130,
+              "outputRows": 50130
+            },
+            "terminatedTimestampUsec": 1714181713078794,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079289,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3811151,
+              "prunedFileTotalBytes": 257953280,
+              "prunedFiles": 15,
+              "prunedFiles2": 15,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 115722290688,
+              "scanAssignedFiles": 6887,
+              "scanBytes": 97477805056,
+              "scanFiles": 5802,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 97477805056,
+              "unprunableFileTotalBytes": 98286380544,
+              "unprunableFiles": 5850,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713046382,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3811151,
+              "outputRows": 3811151
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713031784,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3811151,
+              "outputRows": 3811151
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662632682,
+        "version": 1
+      },
+      "6": {
+        "currentTime": 1714181732630775,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662753671,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662806932,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9272,
+              "outputRows": 9272
+            },
+            "terminatedTimestampUsec": 1714181662815515,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662766714,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662846818,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50539,
+              "outputRows": 50539
+            },
+            "terminatedTimestampUsec": 1714181662866543,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867097,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700170279,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 81170244,
+              "prunedFileTotalBytes": 5534615552,
+              "prunedFiles": 321,
+              "prunedFiles2": 321,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 159287498752,
+              "scanAssignedFiles": 9251,
+              "scanBytes": 151894662656,
+              "scanFiles": 8822,
+              "scanFilteredRows": 3364125060,
+              "scanScannedRows": 3445295304,
+              "scannedFileTotalBytes": 151894662656,
+              "unprunableFileTotalBytes": 153752883200,
+              "unprunableFiles": 8930,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400079,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662822140,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700401237,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 81170244,
+              "outputRows": 81170244
+            },
+            "terminatedTimestampUsec": 1714181700404877,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662803201,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405505,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 81170244,
+              "outputRows": 81170244
+            },
+            "terminatedTimestampUsec": 1714181700405639,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662751035,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700411641,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9263,
+              "outputRows": 9263
+            },
+            "terminatedTimestampUsec": 1714181700420263,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662762553,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700435534,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50467,
+              "outputRows": 50467
+            },
+            "terminatedTimestampUsec": 1714181700449946,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450533,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712752997,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 115115,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 57921859584,
+              "scanAssignedFiles": 3460,
+              "scanBytes": 58815849656,
+              "scanFiles": 3513,
+              "scanFilteredRows": 917703931,
+              "scanScannedRows": 917819046,
+              "scannedFileTotalBytes": 58811961856,
+              "unprunableFileTotalBytes": 57921859584,
+              "unprunableFiles": 3460,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026031,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422862,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713027029,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 115115,
+              "outputRows": 115115
+            },
+            "terminatedTimestampUsec": 1714181713027560,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700407519,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028339,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 115115,
+              "outputRows": 115115
+            },
+            "terminatedTimestampUsec": 1714181713028490,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662770625,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713039796,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9285,
+              "outputRows": 9285
+            },
+            "terminatedTimestampUsec": 1714181713042417,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662741309,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662785444,
+            "id": 28,
+            "id2": 28,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 402000,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 0,
+              "scanAssignedFiles": 0,
+              "scanBytes": 23814656,
+              "scanFiles": 2,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 402000,
+              "scannedFileTotalBytes": 23814656,
+              "unprunableFileTotalBytes": 0,
+              "unprunableFiles": 0,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181662785518,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662753077,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713078456,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50290,
+              "outputRows": 50290
+            },
+            "terminatedTimestampUsec": 1714181713078986,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079246,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3824419,
+              "prunedFileTotalBytes": 257918464,
+              "prunedFiles": 15,
+              "prunedFiles2": 15,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 116348038656,
+              "scanAssignedFiles": 6918,
+              "scanBytes": 97899982024,
+              "scanFiles": 5823,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 97867307008,
+              "unprunableFileTotalBytes": 98427202560,
+              "unprunableFiles": 5856,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713045950,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3823253,
+              "outputRows": 3823253
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030334,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3823253,
+              "outputRows": 3823253
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662632561,
+        "version": 1
+      },
+      "7": {
+        "currentTime": 1714181732632973,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662753984,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662808706,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9142,
+              "outputRows": 9142
+            },
+            "terminatedTimestampUsec": 1714181662816022,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662766979,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662832814,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50249,
+              "outputRows": 50249
+            },
+            "terminatedTimestampUsec": 1714181662866083,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867098,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700399577,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 81525362,
+              "prunedFileTotalBytes": 4645963776,
+              "prunedFiles": 275,
+              "prunedFiles2": 275,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 154995024384,
+              "scanAssignedFiles": 9008,
+              "scanBytes": 152576242176,
+              "scanFiles": 8862,
+              "scanFilteredRows": 3378940840,
+              "scanScannedRows": 3460466202,
+              "scannedFileTotalBytes": 152576242176,
+              "unprunableFileTotalBytes": 150349060608,
+              "unprunableFiles": 8733,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400284,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821272,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700402154,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 81525362,
+              "outputRows": 81525362
+            },
+            "terminatedTimestampUsec": 1714181700404882,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662804511,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405515,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 81525362,
+              "outputRows": 81525362
+            },
+            "terminatedTimestampUsec": 1714181700405633,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662751393,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700413172,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9132,
+              "outputRows": 9132
+            },
+            "terminatedTimestampUsec": 1714181700420776,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662763556,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700449675,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50326,
+              "outputRows": 50326
+            },
+            "terminatedTimestampUsec": 1714181700450156,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450532,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712885349,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 111262,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 59189076992,
+              "scanAssignedFiles": 3539,
+              "scanBytes": 56992595464,
+              "scanFiles": 3408,
+              "scanFilteredRows": 889640007,
+              "scanScannedRows": 889751269,
+              "scannedFileTotalBytes": 56992075776,
+              "unprunableFileTotalBytes": 59189076992,
+              "unprunableFiles": 3539,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026034,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700423860,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713027085,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 111262,
+              "outputRows": 111262
+            },
+            "terminatedTimestampUsec": 1714181713027765,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700409062,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028354,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 111262,
+              "outputRows": 111262
+            },
+            "terminatedTimestampUsec": 1714181713028504,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662771014,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713034361,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 8961,
+              "outputRows": 8961
+            },
+            "terminatedTimestampUsec": 1714181713042472,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662756331,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713058480,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50258,
+              "outputRows": 50258
+            },
+            "terminatedTimestampUsec": 1714181713078758,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079280,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3792742,
+              "prunedFileTotalBytes": 396251136,
+              "prunedFiles": 24,
+              "prunedFiles2": 24,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 113257740800,
+              "scanAssignedFiles": 6731,
+              "scanBytes": 96968191840,
+              "scanFiles": 5762,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 96957230080,
+              "unprunableFileTotalBytes": 97763213312,
+              "unprunableFiles": 5810,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713044923,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3792349,
+              "outputRows": 3792349
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030415,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3792349,
+              "outputRows": 3792349
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662633016,
+        "version": 1
+      },
+      "8": {
+        "currentTime": 1714181732632294,
+        "rsos": [
+          {
+            "activatedTimestampUsec": 1714181662754359,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662807746,
+            "id": 1,
+            "id2": 1,
+            "pipelineIDs": [
+              0
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 8975,
+              "outputRows": 8975
+            },
+            "terminatedTimestampUsec": 1714181662816014,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662767890,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181662843659,
+            "id": 3,
+            "id2": 3,
+            "pipelineIDs": [
+              1
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50261,
+              "outputRows": 50261
+            },
+            "terminatedTimestampUsec": 1714181662866545,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662867096,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700136632,
+            "id": 4,
+            "id2": 4,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 81549957,
+              "prunedFileTotalBytes": 5009458176,
+              "prunedFiles": 293,
+              "prunedFiles2": 293,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 160750434304,
+              "scanAssignedFiles": 9333,
+              "scanBytes": 152616221696,
+              "scanFiles": 8859,
+              "scanFilteredRows": 3379718259,
+              "scanScannedRows": 3461268216,
+              "scannedFileTotalBytes": 152616221696,
+              "unprunableFileTotalBytes": 155740976128,
+              "unprunableFiles": 9040,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181700400068,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181662821148,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700401199,
+            "id": 9,
+            "id2": 9,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 81549957,
+              "outputRows": 81549957
+            },
+            "terminatedTimestampUsec": 1714181700404857,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662803240,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700405490,
+            "id": 11,
+            "id2": 11,
+            "pipelineIDs": [
+              2
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 81549957,
+              "outputRows": 81549957
+            },
+            "terminatedTimestampUsec": 1714181700405620,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662751749,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700412765,
+            "id": 14,
+            "id2": 14,
+            "pipelineIDs": [
+              3
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9053,
+              "outputRows": 9053
+            },
+            "terminatedTimestampUsec": 1714181700420729,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662765049,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181700445164,
+            "id": 16,
+            "id2": 16,
+            "pipelineIDs": [
+              4
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 49801,
+              "outputRows": 49801
+            },
+            "terminatedTimestampUsec": 1714181700450189,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181700450527,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181712625047,
+            "id": 17,
+            "id2": 17,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 114209,
+              "prunedFileTotalBytes": 0,
+              "prunedFiles": 0,
+              "prunedFiles2": 0,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 60436790784,
+              "scanAssignedFiles": 3615,
+              "scanBytes": 58607466248,
+              "scanFiles": 3506,
+              "scanFilteredRows": 914835886,
+              "scanScannedRows": 914950095,
+              "scannedFileTotalBytes": 58607207424,
+              "unprunableFileTotalBytes": 60436790784,
+              "unprunableFiles": 3615,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 1714181713026220,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181700422840,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713027090,
+            "id": 22,
+            "id2": 22,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 114209,
+              "outputRows": 114209
+            },
+            "terminatedTimestampUsec": 1714181713027861,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181700408375,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713028348,
+            "id": 24,
+            "id2": 24,
+            "pipelineIDs": [
+              5
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 114209,
+              "outputRows": 114209
+            },
+            "terminatedTimestampUsec": 1714181713028496,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181662771809,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713034739,
+            "id": 27,
+            "id2": 27,
+            "pipelineIDs": [
+              6
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 9274,
+              "outputRows": 9274
+            },
+            "terminatedTimestampUsec": 1714181713042580,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181662758244,
+            "active": false,
+            "ended": false,
+            "endingTimestampUsec": 1714181713057298,
+            "id": 29,
+            "id2": 29,
+            "pipelineIDs": [
+              7
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "inputRows": 50186,
+              "outputRows": 50186
+            },
+            "terminatedTimestampUsec": 1714181713078772,
+            "type": 49
+          },
+          {
+            "activatedTimestampUsec": 1714181713079295,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 30,
+            "id2": 30,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "outputRows": 3828623,
+              "prunedFileTotalBytes": 447494144,
+              "prunedFiles": 27,
+              "prunedFiles2": 27,
+              "prunedFilesWithInvalidSize": 0,
+              "scanAssignedBytes": 119945832960,
+              "scanAssignedFiles": 7128,
+              "scanBytes": 97911102800,
+              "scanFiles": 5818,
+              "scanFilteredRows": 0,
+              "scanScannedRows": 0,
+              "scannedFileTotalBytes": 97897045504,
+              "unprunableFileTotalBytes": 98698810368,
+              "unprunableFiles": 5866,
+              "unprunableFilesWithInvalidSize": 0
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 9
+          },
+          {
+            "activatedTimestampUsec": 1714181713044921,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 35,
+            "id2": 35,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 402000,
+              "inputRows1": 3828091,
+              "outputRows": 3828091
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          },
+          {
+            "activatedTimestampUsec": 1714181713030393,
+            "active": true,
+            "ended": false,
+            "endingTimestampUsec": 0,
+            "id": 37,
+            "id2": 37,
+            "pipelineIDs": [
+              8
+            ],
+            "schedulingState": 0,
+            "stats": {
+              "hashJoinAccProbeSpilledRows": 0,
+              "inputRows0": 73049,
+              "inputRows1": 3828091,
+              "outputRows": 3828091
+            },
+            "terminatedTimestampUsec": 0,
+            "type": 51
+          }
+        ],
+        "startTime": 1714181662632706,
+        "version": 1
+      }
+    },
+    "time": 1714181736.616618,
+    "timelineByRso": {
+      "0": {
+        "first": 1714181662.738,
+        "second": 1714181662.754
+      },
+      "1": {
+        "first": 1714181662.754,
+        "second": 1714181662.807
+      },
+      "11": {
+        "first": 1714181662.803,
+        "second": 1714181700.405
+      },
+      "13": {
+        "first": 1714181662.739,
+        "second": 1714181662.752
+      },
+      "14": {
+        "first": 1714181662.751,
+        "second": 1714181700.412
+      },
+      "15": {
+        "first": 1714181662.748,
+        "second": 1714181662.799
+      },
+      "16": {
+        "first": 1714181662.765,
+        "second": 1714181700.445
+      },
+      "17": {
+        "first": 1714181700.45,
+        "second": 1714181712.625
+      },
+      "2": {
+        "first": 1714181662.744,
+        "second": 1714181662.797
+      },
+      "22": {
+        "first": 1714181700.422,
+        "second": 1714181713.027
+      },
+      "24": {
+        "first": 1714181700.408,
+        "second": 1714181713.028
+      },
+      "26": {
+        "first": 1714181662.749,
+        "second": 1714181662.771
+      },
+      "27": {
+        "first": 1714181662.771,
+        "second": 1714181713.034
+      },
+      "28": {
+        "first": 1714181662.741,
+        "second": 1714181662.785
+      },
+      "29": {
+        "first": 1714181662.758,
+        "second": 1714181713.057
+      },
+      "3": {
+        "first": 1714181662.767,
+        "second": 1714181662.843
+      },
+      "30": {
+        "first": 1714181713.079,
+        "second": 1714181736.616516
+      },
+      "35": {
+        "first": 1714181713.044,
+        "second": 1714181736.616516
+      },
+      "37": {
+        "first": 1714181713.03,
+        "second": 1714181736.616516
+      },
+      "4": {
+        "first": 1714181662.867,
+        "second": 1714181700.136
+      },
+      "9": {
+        "first": 1714181662.821,
+        "second": 1714181700.401
+      }
+    }
+  }
