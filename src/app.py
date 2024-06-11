@@ -13,24 +13,26 @@ import sys
 
 FDN_FILE_SIZE_PARAMETER = None
 FAN_IN_PARAMETER = 16
-RSO_MEMORY_LIMIT_PARAMETER = None # '1000000000' 
+RSO_MEMORY_LIMIT_PARAMETER = None # '1000000000' # None # '1000000000' 
 MEMORY_SOFT_LIMIT_PERCENT = 90
-DOP_PARAMETER = 8 #  None # 8
+DOP_PARAMETER =  None # 8
 BATCH_SIZE_MULTIPLIER_PARAMETER = 8 # None # 2048 # 1 # 8 # 1
 CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT = None
 BATCHWISE2_MINIMUM_BATCHSIZE = None # 83886080 * 8 * 8 # None
-COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = "128,0,0,0,0,0"
-CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = True
+COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = None # "128,0,0,0,0,0"
+CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = False
 
-def main_setup(session):
+ORIGINAL_TABLE_NAME = 'original_table_1_000_000_000'
+
+def main_setup(session, original_table_name, num_rows):
     pi_dataframe, pi_query_id = queries.setup(session)
     print(pi_dataframe)
     print(pi_query_id)
-    queries.create_original_table(session, FDN_FILE_SIZE_PARAMETER)
+    queries.create_original_table(session, FDN_FILE_SIZE_PARAMETER, original_table_name, num_rows)
 
 def main_cluster(session):
     queries.reset_session_system_parameters(session)
-    queries.create_test_table(session, "test_table")
+    queries.create_test_table(session, "test_table", ORIGINAL_TABLE_NAME)
     queries.reset_table_parameters(session, "test_table")
     queries.remove_defragmentation(session, "test_table")
     queries.setup_manual_clustering(session, "test_table", queries.ClusteringParameters(
@@ -49,7 +51,7 @@ def main_cluster(session):
 
 def main_cluster_auto(session):
     queries.reset_session_system_parameters(session)
-    queries.create_test_table(session, "test_table")
+    queries.create_test_table(session, "test_table", ORIGINAL_TABLE_NAME)
     queries.reset_table_parameters(session, "test_table")
     queries.remove_defragmentation(session, "test_table")
     queries.setup_auto_clustering(session, "test_table", queries.ClusteringParameters(
@@ -70,7 +72,7 @@ def main_cluster_auto(session):
 def main_cluster_2x_dop4(session):
     queries.reset_session_system_parameters(session)
 
-    queries.create_test_table(session, "test_table1")
+    queries.create_test_table(session, "test_table1", ORIGINAL_TABLE_NAME)
     queries.reset_table_parameters(session, "test_table1")
     queries.remove_defragmentation(session, "test_table1")
     queries.setup_manual_clustering(session, "test_table1", queries.ClusteringParameters(
@@ -97,7 +99,7 @@ def main_cluster_2x_dop4(session):
 def main_8_small_ungrouped_batches(session):
     batch_numbers = list(range(8))
 
-    queries.create_test_table(session, f"test_table")
+    queries.create_test_table(session, f"test_table", ORIGINAL_TABLE_NAME)
     queries.reset_table_parameters(session, f"test_table")
     queries.remove_defragmentation(session, f"test_table")
     queries.setup_manual_clustering(session, f"test_table", queries.ClusteringParameters(
@@ -114,7 +116,7 @@ def main_8_small_ungrouped_batches(session):
     
     jobs = []
     for n in batch_numbers:
-        job, query_id = queries.run_manual_clustering(session, f"test_table", False, n, n + 1, use_async=True)
+        job, query_id = queries.run_manual_clustering(session, f"test_table", True, n, n + 1, use_async=True)
         jobs.append(job)
         print(f"Query{n}: {util.query_id_to_snovi_url(query_id)}")
     
@@ -122,7 +124,7 @@ def main_8_small_ungrouped_batches(session):
         j.result()
 
 def main_1_big_grouped_batch(session):
-    queries.create_test_table(session, f"test_table")
+    queries.create_test_table(session, f"test_table", ORIGINAL_TABLE_NAME)
     queries.reset_table_parameters(session, f"test_table")
     queries.remove_defragmentation(session, f"test_table")
     queries.setup_manual_clustering(session, f"test_table", queries.ClusteringParameters(
@@ -147,15 +149,20 @@ def main_cluster_dop(session):
     queries.reset_session_system_parameters(session)
 
     for dop in range(1, 9):
-        queries.create_test_table(session, "test_table")
+        queries.create_test_table(session, "test_table", ORIGINAL_TABLE_NAME)
         queries.reset_table_parameters(session, "test_table")
         queries.remove_defragmentation(session, "test_table")
-        queries.setup_manual_clustering(session, "test_table", queries.ClusteringParameter(
+        queries.setup_manual_clustering(session, "test_table", queries.ClusteringParameters(
             FAN_IN_PARAMETER,
             RSO_MEMORY_LIMIT_PARAMETER,
             MEMORY_SOFT_LIMIT_PERCENT,
             dop,
             BATCH_SIZE_MULTIPLIER_PARAMETER,
+            CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
+            BATCHWISE2_MINIMUM_BATCHSIZE,
+            CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED,
+            COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL
+
         ))
         _, query_id = queries.run_manual_clustering(session, "test_table", CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED, 0, 1)
         print(util.query_id_to_snovi_url(query_id))
@@ -178,7 +185,7 @@ if __name__ == "__main__":
 
     command = sys.argv[1]
     if command == "setup":
-        main_setup(session)
+        main_setup(session, ORIGINAL_TABLE_NAME, 1_000_000_000)
     elif command == "cluster":
         main_cluster(session)
     elif command == "cluster_2x_dop4":

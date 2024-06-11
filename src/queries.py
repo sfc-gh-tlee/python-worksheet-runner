@@ -79,21 +79,21 @@ alter table {table_name} unset
     BATCHWISE2_MINIMUM_BATCHSIZE;
 """
 
-def create_original_table_queries(fdn_file_size: Optional[int]):
+def create_table_queries(fdn_file_size: Optional[int], name: str, num_rows: int):
     result = ""
     if fdn_file_size:
         result += f"alter session set FDN_FILE_SIZE = {fdn_file_size} parameter_comment = 'feature testing';"
-    result += """
-    create or replace table original_table(a float, b int);
-    delete from original_table;
+    result += f"""
+    create or replace table {name}(a float, b int);
+    delete from {name};
     use warehouse tlee_wh_xxxl;
-    insert into original_table select normal(10, 5, random()) a, random() b from table(generator(rowcount => 1000000000));
+    insert into {name} select normal(10, 5, random()) a, random() b from table(generator(rowcount => {num_rows}));
     use warehouse tlee_wh_xs;
     """
     return result
 
-def create_test_table_queries(table_name: str):
-    return f"create or replace table {table_name} clone original_table;"
+def create_test_table_queries(table_name: str, original_table_name: str):
+    return f"create or replace table {table_name} clone {original_table_name};"
 
 def remove_defragmentation_queries(table_name: str):
     return f"""
@@ -163,7 +163,7 @@ def _set_clustering_parameters_queries(table_name: str, clustering_parameters: C
     else:
         result += f"alter session set MEMORY_SOFT_LIMIT = '{clustering_parameters.MEMORY_SOFT_LIMIT_PERCENT}%';"
     
-    if clustering_parameters.DOP_PARAMETER is not None:
+    if clustering_parameters.DOP_PARAMETER is not None and clustering_parameters.CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED:
         result += f"""
         alter session set ALLOW_ANY_LOCAL_DOP=true;
         alter session set local_dop = {clustering_parameters.DOP_PARAMETER} parameter_comment='feature testing';
@@ -235,13 +235,13 @@ def reset_session_system_parameters(session: Session) -> DataFrame:
     print("\n### reset_session_system_parameters")
     return run_queries(session, reset_session_system_parameters_queries())
 
-def create_original_table(session: Session, fdn_file_size: int):
+def create_original_table(session: Session, fdn_file_size: int, table_name: str, num_rows: int):
     print("\n### create_original_table")
-    return run_queries(session, create_original_table_queries(fdn_file_size))
+    return run_queries(session, create_table_queries(fdn_file_size, table_name, num_rows))
 
-def create_test_table(session: Session, table_name: str):
+def create_test_table(session: Session, table_name: str, original_table_name):
     print("\n### create_test_table")
-    return run_queries(session, create_test_table_queries(table_name))
+    return run_queries(session, create_test_table_queries(table_name, original_table_name))
 
 def reset_table_parameters(session: Session, table_name: str):
     print("\n### reset_table_parameters")
