@@ -30,3 +30,27 @@ account = "snowflake"
 user = "admin"
 password = "test"
 warehouse = "tlee_wh"
+
+[tt004047]
+
+host = "snowflake.temptest004047.us-west-2.aws.snowflakecomputing.com"
+database = "tlee_test"
+schema = "test"
+# role = "ENGINEER"
+account = "snowflake"
+user = "admin"
+password = "test"
+warehouse = "tlee_wh"
+
+
+[local]
+
+host = "snowflake.dev.local"
+port = "53400"
+protocol = "http"
+account = "snowflake"
+user = "admin"
+password = "test"
+warehouse = "tlee_wh"
+database = "tlee_test"
+schema = "test"

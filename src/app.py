@@ -11,21 +11,24 @@ from src import functions, typedefs, queries, util
 from src.util import util
 import sys
 
+IS_LOCAL = False 
 FDN_FILE_SIZE_PARAMETER = None
 FAN_IN_PARAMETER = 16
-RSO_MEMORY_LIMIT_PARAMETER = None # '1000000000' # None # '1000000000' 
-MEMORY_SOFT_LIMIT_PERCENT = 90
-DOP_PARAMETER =  None # 8
-BATCH_SIZE_MULTIPLIER_PARAMETER = 8 # None # 2048 # 1 # 8 # 1
+RSO_MEMORY_LIMIT_PARAMETER = None # '1000000000' # None # '1000000000' # None # '1000000000' 
+MEMORY_SOFT_LIMIT_PERCENT = None # 90
+DOP_PARAMETER =  8
+BATCH_SIZE_MULTIPLIER_PARAMETER = 4 # None # 8 # None # 2048 # 1 # 8 # 1
 CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT = None
 BATCHWISE2_MINIMUM_BATCHSIZE = None # 83886080 * 8 * 8 # None
-COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = None # "128,0,0,0,0,0"
-CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = False
+COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = "1,1,1,1,1,1"
+CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = False 
+USE_ARM_WAREHOUSE = not IS_LOCAL
 
-ORIGINAL_TABLE_NAME = 'original_table_1_000_000_000'
+N_TABLE_ROWS = 100_000_000
+ORIGINAL_TABLE_NAME = 'original_table_100_000_000'
 
-def main_setup(session, original_table_name, num_rows):
-    pi_dataframe, pi_query_id = queries.setup(session)
+def main_setup(session, original_table_name, num_rows, use_arm_warehouse):
+    pi_dataframe, pi_query_id = queries.setup(session, use_arm_warehouse)
     print(pi_dataframe)
     print(pi_query_id)
     queries.create_original_table(session, FDN_FILE_SIZE_PARAMETER, original_table_name, num_rows)
@@ -54,6 +57,7 @@ def main_cluster_auto(session):
     queries.create_test_table(session, "test_table", ORIGINAL_TABLE_NAME)
     queries.reset_table_parameters(session, "test_table")
     queries.remove_defragmentation(session, "test_table")
+
     queries.setup_auto_clustering(session, "test_table", queries.ClusteringParameters(
         FAN_IN_PARAMETER,
         RSO_MEMORY_LIMIT_PARAMETER,
@@ -65,6 +69,7 @@ def main_cluster_auto(session):
         CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED,
         COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL
     ))
+
     _, query_id = queries.run_auto_clustering(session, "test_table")
     print(util.query_id_to_snovi_url(query_id))
 
@@ -97,6 +102,33 @@ def main_cluster_2x_dop4(session):
     # job2.result()
 
 def main_8_small_ungrouped_batches(session):
+    batch_numbers = list(range(4))
+
+    queries.create_test_table(session, f"test_table", ORIGINAL_TABLE_NAME)
+    queries.reset_table_parameters(session, f"test_table")
+    queries.remove_defragmentation(session, f"test_table")
+    queries.setup_manual_clustering(session, f"test_table", queries.ClusteringParameters(
+        FAN_IN_PARAMETER,
+        RSO_MEMORY_LIMIT_PARAMETER,
+        MEMORY_SOFT_LIMIT_PERCENT,
+        1,
+        1,
+        CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
+        BATCHWISE2_MINIMUM_BATCHSIZE = 83886080 * 8 * 2 * 1,
+        CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = False,
+        COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL
+    ))
+    
+    jobs = []
+    for n in batch_numbers:
+        job, query_id = queries.run_manual_clustering(session, f"test_table", False, n, n + 1, use_async=True)
+        jobs.append(job)
+        print(f"Query{n}: {util.query_id_to_snovi_url(query_id)}")
+    
+    for j in jobs:
+        j.result()
+    
+def main_n_batches(session):
     batch_numbers = list(range(8))
 
     queries.create_test_table(session, f"test_table", ORIGINAL_TABLE_NAME)
@@ -109,14 +141,14 @@ def main_8_small_ungrouped_batches(session):
         1,
         1,
         CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
-        BATCHWISE2_MINIMUM_BATCHSIZE = 83886080 * 8,
-        CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = True,
+        BATCHWISE2_MINIMUM_BATCHSIZE = 83886080 * 8 * 2,
+        CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = False,
         COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL
     ))
     
     jobs = []
     for n in batch_numbers:
-        job, query_id = queries.run_manual_clustering(session, f"test_table", True, n, n + 1, use_async=True)
+        job, query_id = queries.run_manual_clustering(session, f"test_table", False, n, n + 1, use_async=True)
         jobs.append(job)
         print(f"Query{n}: {util.query_id_to_snovi_url(query_id)}")
     
@@ -134,7 +166,7 @@ def main_1_big_grouped_batch(session):
         None,
         1,
         CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
-        BATCHWISE2_MINIMUM_BATCHSIZE = 83886080 * 8 * 8,
+        BATCHWISE2_MINIMUM_BATCHSIZE = None, # 83886080 * 8 * 8,
         CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = False,
         COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL,
     ))
@@ -167,15 +199,69 @@ def main_cluster_dop(session):
         _, query_id = queries.run_manual_clustering(session, "test_table", CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED, 0, 1)
         print(util.query_id_to_snovi_url(query_id))
 
+def main_1_dop_4_4_dop_1(session):
+    # 1x DOP = 4
+    queries.create_test_table(session, f"test_table1", ORIGINAL_TABLE_NAME)
+    queries.reset_table_parameters(session, f"test_table1")
+    queries.remove_defragmentation(session, f"test_table1")
+    queries.setup_manual_clustering(session, f"test_table1", queries.ClusteringParameters(
+        FAN_IN_PARAMETER,
+        RSO_MEMORY_LIMIT_PARAMETER,
+        MEMORY_SOFT_LIMIT_PERCENT,
+        4,
+        1,
+        CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
+        BATCHWISE2_MINIMUM_BATCHSIZE = 83886080 * 8 * 2 * 4,
+        CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = True,
+        COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL
+    ))
+
+    session.sql("alter session set RSO_MEMORY_LIMIT='8000000000' parameter_comment='feature testing'").collect()
+    
+    # Run the jobs.
+    jobs = []
+    job, query_id = queries.run_manual_clustering(session, f"test_table1", True, 0, 1, use_async=True)
+    jobs.append(job)
+    print(f"Query DOP=4: {util.query_id_to_snovi_url(query_id)}")
+
+    # 4x DOP = 1
+    # queries.create_test_table(session, f"test_table2", ORIGINAL_TABLE_NAME)
+    # queries.reset_table_parameters(session, f"test_table2")
+    # queries.remove_defragmentation(session, f"test_table2")
+    # queries.setup_manual_clustering(session, f"test_table2", queries.ClusteringParameters(
+    #     FAN_IN_PARAMETER,
+    #     RSO_MEMORY_LIMIT_PARAMETER,
+    #     MEMORY_SOFT_LIMIT_PERCENT,
+    #     1,
+    #     1,
+    #     CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
+    #     BATCHWISE2_MINIMUM_BATCHSIZE = 83886080 * 8 * 2 * 1,
+    #     CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = True,
+    #     COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL = COMPUTE_SERVICE_WAREHOUSE_CLUSTERING_EXECUTION_POOL
+    # ))
+
+
+    # session.sql("alter session set RSO_MEMORY_LIMIT='2000000000' parameter_comment='feature testing'").collect()
+
+    # for i in range(4):
+    #     job, query_id = queries.run_manual_clustering(session, f"test_table2", True, i, i + 1, use_async=True)
+    #     jobs.append(job)
+    #     print(f"Query DOP=1 {i}: {util.query_id_to_snovi_url(query_id)}")
+    
+    # Collect
+    for j in jobs:
+        j.result()
+
 
 if __name__ == "__main__":
     from src.util.local import get_env_var_config, get_dev_config
 
     print("Creating session...")
-    session = Session.builder.configs(get_dev_config(config_name='tt000006')).create()
+    print(get_dev_config(config_name='local' if IS_LOCAL else 'tt004047'))
+    session = Session.builder.configs(get_dev_config(config_name='local' if IS_LOCAL else 'tt004047')).create()
 
     print("Adding import...")
-    session.add_packages("pydantic", "pandas")
+    # session.add_packages("pydantic", "pandas")
     session.add_import(typedefs.__file__, 'src.typedefs')
     session.add_import(functions.__file__, 'src.functions')
     session.add_import(util.__file__, 'src.util.util')
@@ -185,7 +271,7 @@ if __name__ == "__main__":
 
     command = sys.argv[1]
     if command == "setup":
-        main_setup(session, ORIGINAL_TABLE_NAME, 1_000_000_000)
+        main_setup(session, ORIGINAL_TABLE_NAME, N_TABLE_ROWS, USE_ARM_WAREHOUSE)
     elif command == "cluster":
         main_cluster(session)
     elif command == "cluster_2x_dop4":
@@ -198,6 +284,10 @@ if __name__ == "__main__":
         main_1_big_grouped_batch(session)
     elif command == "cluster_auto":
         main_cluster_auto(session)
+    elif command == "n_batches":
+        main_n_batches(session)
+    elif command == "1_dop_4_4_dop_1":
+        main_1_dop_4_4_dop_1(session)
     else:
         print(f"Invalid command {command}")
 
