@@ -1,37 +1,11 @@
-# Python Project Template for Snowpark
+# Snowpark Worksheet Runner
 
-Use this template to start writing data applications on Snowflake using Python.
+This is a very rough script to help run clustering experiments.
 
-## Setup
 
-Set the following environment variables with your Snowflake account information:
+## Install dependencies
 
-```bash
-# Linux/MacOS
-export SNOWSQL_ACCOUNT=<replace with your account identifer>
-export SNOWSQL_USER=<replace with your username>
-export SNOWSQL_ROLE=<replace with your role>
-export SNOWSQL_PWD=<replace with your password>
-export SNOWSQL_DATABASE=<replace with your database>
-export SNOWSQL_SCHEMA=<replace with your schema>
-export SNOWSQL_WAREHOUSE=<replace with your warehouse>
-```
-
-```powershell
-# Windows/PowerShell
-$env:SNOWSQL_ACCOUNT = "<replace with your account identifer>"
-$env:SNOWSQL_USER = "<replace with your username>"
-$env:SNOWSQL_ROLE = "<replace with your role>"
-$env:SNOWSQL_PWD = "<replace with your password>"
-$env:SNOWSQL_DATABASE = "<replace with your database>"
-$env:SNOWSQL_SCHEMA = "<replace with your schema>"
-$env:SNOWSQL_WAREHOUSE = "<replace with your warehouse>"
-```
-
-Optional: You can set this env var permanently by editing your bash profile (on Linux/MacOS) or 
-using the System Properties menu (on Windows).
-
-### Install dependencies
+These instructions are taken directly from here: [snowpark-python-template](https://github.com/Snowflake-Labs/snowpark-python-template)
 
 Create and activate a conda environment using [Anaconda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands):
 
@@ -50,54 +24,30 @@ Press `Ctrl`+`Shift`+`P` to open the command palette, then select **Python: Sele
 
 Go to **File** > **Settings** > **Project** > **Python Interpreter** and select the snowpark interpreter.
 
-## Prereqs
 
-To develop your applications locally, you will need
+## Using This Script
 
-- A Snowflake account
-- Python 3.8 or greater
-- An IDE or code editor (VS Code, PyCharm, etc.)
-
-## Usage
-
-Once you've set your credentials and installed the packages, you can test your connection to Snowflake by executing the stored procedure in [`app.py`](src/procs/app.py):
+To run, use
 
 ```bash
-python src/app.py
+/opt/anaconda3/envs/snowpark/bin/python /Users/tlee/projects/snowpark-python-template/src/app.py <option>
 ```
 
-You should see the following output:
-
-```
-------------------------------------------------------
-|Hello world                                         |
-------------------------------------------------------
-|Welcome to Snowflake!                               |
-|Learn more: https://www.snowflake.com/snowpark/     |
-------------------------------------------------------
-```
-
-### Run tests
-
-You can run the test suite locally from the project root:
+To setup a table, change the `N_TABLE_ROWS` variable to the desired table size then use the `setup` option.
 
 ```bash
-python -m pytest
+/opt/anaconda3/envs/snowpark/bin/python /Users/tlee/projects/snowpark-python-template/src/app.py setup
 ```
 
-### Deploy to Snowflake
+Subsequent runs will just clone the table that was setup to cluster. This can be done with the `cluster_auto` and `cluster_manual` options for either manual or automatic clustering. The variables at the top of `app.py` can be used to alter the parameters that are used for clustering.
 
-The GitHub Actions [workflow file](.github/workflows/build-and-deploy.yml) allows you to continously deploy your objects to Snowflake. When you're ready,
-create secrets in your GitHub repository with the same name and values as the environment variables you created earler (`SNOWSQL_PWD`, `SNOWSQL_ACCOUNT`, etc.). The workflow will create a stage, upload the Python source code, and create the stored procedure object. For more information, see [`resources.sql`](resources.sql).
 
-## Docs
+## Sample Workflow For Background Clustering
 
-- [Snowpark Developer Guide for Python](https://docs.snowflake.com/en/developer-guide/snowpark/python/index)
-- [Creating Stored Procedures](https://docs.snowflake.com/en/developer-guide/snowpark/python/creating-sprocs)
-- [Snowpark API Reference](https://docs.snowflake.com/developer-guide/snowpark/reference/python/index.html)
+1. Start and run my dev environment
+2. Add the correct config to the `app.toml` and update the `CONFIG_NAME` variable in `app.py`
+2. Setup a table with `/opt/anaconda3/envs/snowpark/bin/python /Users/tlee/projects/snowpark-python-template/src/app.py setup`
+3. Set the desired parameters with the variables at the top of `app.py`
+4. Run background clustering with `/opt/anaconda3/envs/snowpark/bin/python /Users/tlee/projects/snowpark-python-template/src/app.py cluster_auto`
+5. Open http://snowflake.dev.local:53400/console#/monitoring/queries to see the queries that were run and also the background clustering statements
 
-## Contributing
-
-Have a question or ran into a bug? Please [file an issue](https://github.com/Snowflake-Labs/snowpark-python-template/issues/new) and let us know.
-
-Have an idea for an improvement? Fork this repository and open a PR with your idea!

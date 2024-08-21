@@ -27,7 +27,7 @@ class ClusteringParameters:
 
 def setup_queries(use_arm_warehouse: bool):
     return f"""
-use warehouse depaut_xs;
+use warehouse compute_service_warehouse;
 create database if not exists tlee_test;
 use database tlee_test;
 create schema if not exists test;
@@ -78,8 +78,7 @@ alter table {table_name} unset
     enable_clustering_service,
     FDN_FILE_SIZE,
     CLUSTERING_SERVICE_BATCHSET_SIZE_LIMIT,
-    BATCHWISE2_MINIMUM_BATCHSIZE,
-    CLUSTERING_EXECUTION_GROUPED_MAX_BATCH_SIZE_FACTOR
+    BATCHWISE2_MINIMUM_BATCHSIZE
     ;
 """
 
