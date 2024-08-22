@@ -6,7 +6,7 @@ and testing.
 from snowflake.snowpark.session import Session
 from snowflake.snowpark.dataframe import col, DataFrame
 from snowflake.snowpark.types import IntegerType, VariantType, Variant
-from src import typedefs, queries, util
+from src import queries, util
 from src.util import util
 import sys
 
@@ -91,7 +91,6 @@ if __name__ == "__main__":
     session = Session.builder.configs(get_dev_config(config_name=CONFIG_NAME)).create()
 
     print("Adding import...")
-    session.add_import(typedefs.__file__, 'src.typedefs')
     session.add_import(util.__file__, 'src.util.util')
     session.add_import(queries.__file__, 'src.queries')
 
