@@ -51,3 +51,4 @@ Subsequent runs will just clone the table that was setup to cluster. This can be
 4. Run background clustering with `/opt/anaconda3/envs/snowpark/bin/python /Users/tlee/projects/snowpark-python-template/src/app.py cluster_auto`
 5. Open http://snowflake.dev.local:53400/console#/monitoring/queries to see the queries that were run and also the background clustering statements
 
+**Tip**: To obtain the sql queries to run without actually running them, you can comment out the execute line in the `run_queries` function. This lets you paste them manually into a worksheet to run at your own pace.
