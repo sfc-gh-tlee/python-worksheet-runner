@@ -25,6 +25,10 @@ Press `Ctrl`+`Shift`+`P` to open the command palette, then select **Python: Sele
 Go to **File** > **Settings** > **Project** > **Python Interpreter** and select the snowpark interpreter.
 
 
+## About the Script
+
+The entry point is in `src/app.py`. The main function parses the command line argument and executes a setup or a type of clustering. There are functions that soley return sql text based on their options. The sql text is then put through the executor `run_queries` to execute them.
+
 ## Using This Script
 
 To run, use
