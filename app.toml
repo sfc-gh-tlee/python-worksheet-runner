@@ -54,3 +54,12 @@ password = "test"
 warehouse = "tlee_wh"
 database = "tlee_test"
 schema = "test"
+
+[qa6]
+
+accountname = snowflake
+username = sparkes
+host = snowflake.awsuswest2qa6.external-zone.snowflakecomputing.com
+port = 8085
+protocol = https
+authenticator=externalbrowser

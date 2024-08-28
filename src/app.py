@@ -11,7 +11,7 @@ from src.util import util
 import sys
 
 # Corresponds to configs added to the app.toml
-CONFIG_NAME = 'local'
+CONFIG_NAME = 'qa6'
 
 # Enable grouped execution
 CLUSTERING_EXECUTION_GROUPED_BATCHES_ENABLED = True
